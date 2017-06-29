@@ -31,7 +31,9 @@ function wxpay(app, money, orderId, redirectUrl) {
           }
         })
       } else {
-        wx.showToast({title: '服务器忙' + res.data.code})
+        //wx.showToast({title: '服务器忙' + res.data.code})
+        wx.showToast({ title: '请耐心等待我送货上门！' })
+       
       }
     }
   })
