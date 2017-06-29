@@ -10,7 +10,7 @@ App({
         key: 'mallName'
       },
       success: function(res) {
-        wx.setStorageSync('mallName', res.data.data.value);
+        wx.setStorageSync('mallName', res.data.value);
       }
     })
     this.login();
@@ -87,6 +87,6 @@ App({
   },
   globalData:{
     userInfo:null,
-    subDomain:"mall"
+    subDomain:"umldemo"
   }
 })
